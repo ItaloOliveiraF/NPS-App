@@ -10,7 +10,6 @@ import AppError from '../errors/AppError';
 
 class SendEmailController{
     async execute(request: Request, response: Response) {
-        console.log("entrei")
         const { email, survey_id } = request.body;
         
         const userRepository = getCustomRepository(UserRepository);
