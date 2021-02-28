@@ -1,0 +1,76 @@
+<style>
+    .container{
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .value{
+        padding: 10px;
+        background: #8257e6;
+        color: #FFF;
+        border-radius: 6px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .levels{
+        width: 350px;
+        margin: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .answers{
+        list-style: none;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+</style>
+
+
+    <div class="container">
+        <p>Olá <strong>{{username}}</strong>! Tudo bem?</p>
+
+        <h3>{{title}}</h3>
+        
+        <p><strong>{{description}}</strong></p>
+
+        <div class="levels">
+            <span>Pouco Provável</span>
+            <span>Muito Provável</span>
+        </div>
+
+        <ul class="answers">
+            <li><a class="value" href="{{link}}/1?u={{id}}">1</a></li>
+            <li><a class="value" href="{{link}}/2?u={{id}}">2</a></li>
+            <li><a class="value" href="{{link}}/3?u={{id}}">3</a></li>
+            <li><a class="value" href="{{link}}/4?u={{id}}">4</a></li>
+            <li><a class="value" href="{{link}}/5?u={{id}}">5</a></li>
+            <li><a class="value" href="{{link}}/6?u={{id}}">6</a></li>
+            <li><a class="value" href="{{link}}/7?u={{id}}">7</a></li>
+            <li><a class="value" href="{{link}}/8?u={{id}}">8</a></li>
+            <li><a class="value" href="{{link}}/9?u={{id}}">9</a></li>
+            <li><a class="value" href="{{link}}/10?u={{id}}">10</a></li>
+        </ul>
+
+        <br>
+        <br>
+
+        <form action="https://www.google.com.br" method="GET">
+            <textarea name="" id="" cols="30" rows="10" value="">
+
+            </textarea>
+            <button type="submit" value="submit">Oi</button>
+        </form>
+
+        <p><strong>Sua opinião é muito importante para a gente</strong></p>
+        <h3>Equipe <strong>NLW</strong></h3>
+    </div>
